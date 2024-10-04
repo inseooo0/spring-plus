@@ -12,6 +12,7 @@ import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 
 import java.util.List;
+import java.util.Optional;
 
 import static org.example.expert.domain.todo.entity.QTodo.todo;
 import static org.example.expert.domain.user.entity.QUser.user;
@@ -53,6 +54,20 @@ public class TodoRepositoryQueryImpl implements TodoRepositoryQuery {
                 .fetchCount();
 
         return new PageImpl<>(results, pageable, total);
+    }
+
+    @Override
+    public Optional<Todo> findByIdWithUser(Long todoId) {
+        QTodo todo = QTodo.todo;
+        QUser user = QUser.user;
+
+        Todo result = queryFactory
+                .selectFrom(todo)
+                .leftJoin(todo.user, user).fetchJoin()
+                .where(todo.id.eq(todoId))
+                .fetchOne();
+
+        return Optional.ofNullable(result);
     }
 
 }
