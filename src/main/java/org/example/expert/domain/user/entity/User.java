@@ -37,7 +37,10 @@ public class User extends Timestamped {
     }
 
     public static User fromAuthUser(AuthUser authUser) {
-        return new User(authUser.getId(), authUser.getEmail(), authUser.getNickname(), authUser.getUserRole());
+        return new User(authUser.getId(), authUser.getEmail(),
+                authUser.getNickname(), authUser.getAuthorities()
+                .stream().map(i -> UserRole.of(i.getAuthority())).findFirst()
+                .orElseThrow(() -> new IllegalArgumentException("유효하지 않은 UserRole")));
     }
 
     public void changePassword(String password) {
