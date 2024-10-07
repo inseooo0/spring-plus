@@ -1,10 +1,6 @@
 package org.example.expert.domain.todo.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDate;
 
@@ -14,7 +10,8 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @Builder
 public class TodoSearchCondition {
-    String weather;
+    String keyword;
     LocalDate start;
     LocalDate end;
+    String nickname;
 }
