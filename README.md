@@ -9,3 +9,10 @@
 # rds
 ![image](https://github.com/user-attachments/assets/030df167-82de-4a6a-9128-921fb28648f2)
 ![image](https://github.com/user-attachments/assets/852e2577-93bd-4a96-85db-1ced79c59483)
+
+# S3
+![image](https://github.com/user-attachments/assets/31f3e444-f00a-48bd-931f-6c644e7e3c5f)
+
+## api 정상동작 확인
+![image](https://github.com/user-attachments/assets/950b544b-9cf9-4b7d-a714-83eaeb92a41e)
+
