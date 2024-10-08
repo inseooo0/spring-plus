@@ -17,5 +17,9 @@
 ![image](https://github.com/user-attachments/assets/950b544b-9cf9-4b7d-a714-83eaeb92a41e)
 
 # 대용량 데이터 처리
-## 초기 조회 속도
+## 초기 조회 속도 - 833ms
 ![image](https://github.com/user-attachments/assets/0dc5d125-9112-45c6-afdf-3dc6dd890645)
+
+## 닉네임 필드에 인덱스 추가 - 129ms
+![image](https://github.com/user-attachments/assets/bb5cd2ff-0495-4091-95a8-200ff85e43e7)
+![image](https://github.com/user-attachments/assets/cd68ef9e-53a5-4ef3-9c05-4c9700cd0380)
