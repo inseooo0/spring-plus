@@ -16,3 +16,6 @@
 ## api 정상동작 확인
 ![image](https://github.com/user-attachments/assets/950b544b-9cf9-4b7d-a714-83eaeb92a41e)
 
+# 대용량 데이터 처리
+## 초기 조회 속도
+![image](https://github.com/user-attachments/assets/0dc5d125-9112-45c6-afdf-3dc6dd890645)
